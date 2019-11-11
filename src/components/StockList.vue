@@ -52,7 +52,8 @@
 
                 <template slot="items" slot-scope="props" >
 
-          <td nowrap="true">{{ props.item.customer}}</td>
+          <td nowrap="true">{{ props.item.customer.name}}</td>
+                  <td nowrap="true">{{props.item.customer.cust_number}}</td>
           <td nowrap="true">{{ props.item.symbol }}</td>
           <td nowrap="true">{{ props.item.name }}</td>
           <td nowrap="true">{{ props.item.shares}}</td>
@@ -93,7 +94,8 @@
       showMsg: '',
       headers: [
 
-        {text: 'Customer', sortable: false, align: 'left',},
+        {text: 'Customer Name', sortable: false, align: 'left',},
+          {text: 'Customer Number', sortable: false, align: 'left',},
         {text: 'Symbol', sortable: false, align: 'left',},
         {text: 'Name', sortable: false, align: 'left',},
         {text: 'Shares', sortable: false, align: 'left',},

@@ -50,7 +50,8 @@
         style="max-height: 300px; overflow-y: auto"
       >
         <template slot="items" slot-scope="props" >
-          <td>{{ props.item.customer }}</td>
+          <td>{{ props.item.customer.name }}</td>
+          <td>{{props.item.customer.cust_number}}</td>
           <td nowrap="true">{{ props.item.category }}</td>
           <td nowrap="true">{{ props.item.description }}</td>
           <td nowrap="true">{{ props.item.acquired_value }}</td>
@@ -92,7 +93,8 @@
       showMsg: '',
       headers: [
 
-        {text: 'Customer', sortable: false, align: 'left',},
+        {text: 'Customer Name', sortable: false, align: 'left',},
+          {text: 'Customer Number', sortable: false, align: 'left',},
         {text: 'Category', sortable: false, align: 'left',},
         {text: 'Description', sortable: false, align: 'left',},
         {text: 'Acquired_Value', sortable: false, align: 'left',},
