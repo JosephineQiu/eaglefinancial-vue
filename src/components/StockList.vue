@@ -20,7 +20,7 @@
         :value="true"
         type="success"
       >
-        New investment has been added.
+        New stock has been added.
       </v-alert>
       <v-alert v-if="showMsg === 'update'" dismissible
         :value="true"
@@ -51,7 +51,7 @@
       >
 
                 <template slot="items" slot-scope="props" >
-          <td>{{ props.item.stock }}</td>
+
           <td nowrap="true">{{ props.item.customer}}</td>
           <td nowrap="true">{{ props.item.symbol }}</td>
           <td nowrap="true">{{ props.item.name }}</td>
