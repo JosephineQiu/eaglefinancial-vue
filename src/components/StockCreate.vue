@@ -54,14 +54,14 @@
                   v-model="stock.purchase_price"
                   label="Purchase Price"
                   required
-                  type="date"
+                  type="number"
 
                 />
                 <v-text-field
                   v-model="stock.purchase_date"
-                  label="Recent Date"
+                  label="Purchase Date"
                   required
-                  type="number"
+                  type="date"
                 />
 
 
