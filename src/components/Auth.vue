@@ -70,7 +70,7 @@
 <script>
 
   import router from '../router';
-  import {APIService} from '../http/APIService';
+  import {APIService} from '../https/APIService';
   const apiService = new APIService();
 
   export default {

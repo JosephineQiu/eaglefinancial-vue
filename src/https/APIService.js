@@ -1,7 +1,7 @@
 /* eslint-disable */
 import axios from 'axios';
 
-const API_URL = 'https://eaglefinancial-vue-backend.herokuapp.com/'; /* http://groyce.pythonanywhere.com/ or http://localhost:8000 */
+const API_URL = "https://efs-django-vue.herokuapp.com" /*'https://eaglefinancial-vue-backend.herokuapp.com/'; /* http://groyce.pythonanywhere.com/ or http://localhost:8000 */
 
 export class APIService {
   constructor() {
